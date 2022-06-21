@@ -5,12 +5,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
 }
 
-header {
-  text-align: center;
-  padding-bottom: 30px;
-}
 
 main {
   column-count: 3;
@@ -20,14 +17,14 @@ main {
 }
 
 .menu {
-  width: 300px;
+  width: 260px;
   position: relative;
   right:30px;
 }
 
 summary {
   text-align: right;
-  padding-top: 20px;
+  padding-top: 17px;
   cursor: pointer;
   list-style: none;
   font-size: 17px;
@@ -36,17 +33,17 @@ summary {
 
 h1{
   position: relative;
-  left: 30px;
+  left: 35px;
   color: rgba(33,36,44,.64);
   font-family: PT Sans,Helvetica,Arial,sans-serif;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  padding: 40px;
+  padding-bottom: 40px;
 }
 
-strong{
+strong {
   color: black;
 }
 
@@ -65,21 +62,11 @@ strong{
 
 .projects-wrapper {
   background: #ffebf2;
-  margin-top: -190px;
-  padding: 130px;
+  margin-top: -210px;
+  padding: 140px;
   border-radius: 8px;
 }
 
-#red-social {
-  column-count: 2;
-  padding-top: 150px;
-}
-
-.linkedin {
-  display: flex;
-  justify-content: flex-end;
-
-}
 
 
 
