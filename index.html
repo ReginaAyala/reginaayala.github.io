@@ -9,46 +9,25 @@
   </head>
   <body>
     <main>
-      <div class="title">
-        <h1 class="highlighter"> 
-          <strong>Regina Ayala</strong>
-          is a <br> 
-          software developer
-        </h1>
-
+      <div class="conteiner">
+        <div class="title">
+          <h1 class="highlighter"> 
+            <strong>Regina Ayala</strong>
+            is a <br> 
+            software developer
+          </h1>
+        </div>
         <div class="menu">
-          <details>
-            <summary>About</summary>
-            <div class="detail-menu">
-              <p>
-                abc
-             </p>
-            </div>
-          </details>
-          <details>
-            <summary>Design</summary>
-            <div class="detail-menu">
-              <p>
-                abc
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>Skills</summary>
-            <div class="detail-menu">
-              <p>
-                abc
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>Contact</summary>
-            <div class="detail-menu">
-              <p>
-                abc
-              </p>
-            </div>
-          </details>
+            <a href="javascript:open_window()">About</a>
+            <a href="javascript:open_window()">Skills</a>
+            <a href="javascript:open_curriculum()">Curriculum</a>
+            <details>
+              <summary>
+                Contact
+              </summary>
+                <a class="link" href="https://www.linkedin.com/in/regina-ayala-a87a3b22b/">Linkedin</a>
+                <a class="link" href="https://github.com/ReginaAyala">Github</a>
+            </details>
         </div>
       </div>
       <div>
@@ -56,7 +35,47 @@
         <img class="sparkle" alt="Flashing sparkle" src="imagen/sparkle.gif">
       </div>
     </main>
-    <section class="projects-wrapper">
+
+    <div class="window" id="about">
+      <div id="close">
+        <a href="javascript:close_window()"><img src="imagen/cerrar.png"></a>
+      </div>
+
+    </div>
+
+    <div class="window" id="skills">
+      <div id="close">
+        <a href="javascript:close_window()"><img src="imagen/cerrar.png"></a>
+      </div>
+
+    </div>
+
+    <div class="cv" id="curriculum">
+      <div id="close">
+        <a href="javascript:close_window()"><img src="imagen/cerrar.png"></a>
+      </div>
+      <img class="imagcv" src="imagen/cv_regina.png" width="600" height="720">
+    </div>
+
+    <section class="wrapper">
     </section>
+
+    <script>
+      function open_window () {
+        document.getElementById("about").style.display="block";
+        document.getElementById("skills").style.display="block";
+      }
+
+      function open_curriculum () {
+        document.getElementById("curriculum").style.display="block";
+      }
+
+      function close_window () {
+        document.getElementById("about").style.display="none";
+        document.getElementById("skills").style.display="none";
+        document.getElementById("curriculum").style.display="none";
+      }
+
+    </script>
   </body>
 </html>
