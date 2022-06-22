@@ -19,7 +19,7 @@
         </div>
         <div class="menu">
             <a href="javascript:open_window()">About</a>
-            <a href="javascript:open_window()">Skills</a>
+            <a href="javascript:open_skills()">Skills</a>
             <a href="javascript:open_curriculum()">Curriculum</a>
             <details>
               <summary>
@@ -27,6 +27,7 @@
               </summary>
                 <a class="link" href="https://www.linkedin.com/in/regina-ayala-a87a3b22b/">Linkedin</a>
                 <a class="link" href="https://github.com/ReginaAyala">Github</a>
+                <a class="link" href="mailto:regis3096@gmail.com">Email</a>
             </details>
         </div>
       </div>
@@ -43,11 +44,40 @@
 
     </div>
 
-    <div class="window" id="skills">
+    <div class="window2" id="skills">
       <div id="close">
         <a href="javascript:close_window()"><img src="imagen/cerrar.png"></a>
       </div>
-
+      <div class="colum">
+        <div class="Technical">
+          <h2>Technical</h2>
+          <p>CSS</p>
+          <p>HTML</p>
+          <p>Elixir</p>
+          <p>SQL</p>
+          <p>UX</p>
+          <p>Phoenix</p>
+          <p>Git</p>
+          <p>Linux</p>
+          <p>Testing</p>
+        </div>
+        <div class="soft">
+          <h2>Soft</h2>
+          <p>Responsable</p>
+          <p>Teamwork</p>
+          <p>Creativity</p>
+          <p>Work ethic</p>
+          <p>Comunication</p>
+          <p>Empathic</p>
+          <p>Resilience</p>
+          <p>Assertive</p>
+        </div>
+        <div class="Languajes">
+          <h2>Languages </h2>
+          <p>Spanish - native</p>
+          <p>English - intermediate</p>
+        </div>
+      </div>
     </div>
 
     <div class="cv" id="curriculum">
@@ -63,6 +93,9 @@
     <script>
       function open_window () {
         document.getElementById("about").style.display="block";
+      }
+
+      function open_skills () {
         document.getElementById("skills").style.display="block";
       }
 
